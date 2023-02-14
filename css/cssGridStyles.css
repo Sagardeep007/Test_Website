@@ -7,7 +7,11 @@
     background-color: lightblue;
     }
     
-    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+    }
     
     .box {
     padding: 20px;
@@ -16,6 +20,8 @@
     
     .box1 {
     background-color: yellow;
+    grid-column: 2/4;
+    grid-row: 2/4;
     }
     
     .box2 {
@@ -24,6 +30,7 @@
     
     .box3 {
     background-color: blueviolet;
+    grid-column: 1/ span 3;
     }
     
     .box4 {
