@@ -1,4 +1,30 @@
+*{
+    margin: 0;
+
+}
+p{
+    margin-bottom: 20px;
+}
+
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background: darkcyan;
+}
+header{
+    background-color: White;
+    text-align: center;
+}
+nav{
+    background-color: orangered;
+    text-align: Center;
+}
+.leftCol{
+    background-color: darkgrey;
+}
+.rightCol{
+    background-color: lightcoral;
+}
+footer{
+    background-color: black;
+    color: white;
 }
