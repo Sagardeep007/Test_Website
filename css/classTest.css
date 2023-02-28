@@ -1,17 +1,28 @@
 body{
-    background: rgb(13, 106, 137);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-p{
+p,h1,h2{
     margin-bottom: 10px;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 header{
+    background-image: url("../image/beautiful-natural-wallpaper.jpg");
+    height :100vh;
+    background-size: cover;
+    display: grid;
+    place-content: center;
     background-color: lightpink;
     padding: 10px;
     text-align: center;
@@ -43,6 +54,68 @@ footer{
     grid-area: foot;
 }
 
+nav a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: darkgreen;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    background-color: snow;
+    color: black;
+}
+
+nav li{
+    list-style: none;
+    flex-basis: 100%;
+}
+
+.social a{
+    background-color: olive;
+    color: #000;
+    
+}
+
+.social {
+    flex-basis: 25%;
+
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#toggleNav{
+    display: none;
+}
+
+.labelLook{
+    background-color:black;
+    color: white;
+    font-size: 2rem;
+    display: block;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+nav ul{
+    display: none;
+}
+
+#toggleNav:checked~ul{
+    display: flex;
+    position: fixed;
+    top: 62px;
+}
+
 @media screen and (min-width: 500px) {
 
     .container{
@@ -53,6 +126,19 @@ footer{
         "nav nav"
         "side main"
         "foot foot";
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav li{
+        flex: 3;
+    }
+
+    .social{
+        flex: 1;
     }
     
 }
